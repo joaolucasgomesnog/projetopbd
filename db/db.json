@@ -1,0 +1,21 @@
+{
+    "clientes": [
+        {
+            "id": 1,
+            "cpf":"06358819907",
+            "nome":"Joao Fernando de Souza"
+        },
+        {
+            "id": 2,
+            "cpf":"98646549849",
+            "nome":"Joao Fernando de Souza"
+        },
+        {
+            "id": 3,
+            "cpf":"9856878791",
+            "nome":"Cezinha tocador de berimbau"
+        }
+    ]
+
+    
+}
