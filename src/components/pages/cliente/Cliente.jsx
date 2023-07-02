@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react"
 import { Table, Button } from "react-bootstrap"
-
+import FormularioCliente from "./FormularioCliente"
 
 const Cliente = () => {
     const [clientes, setClientes] = useState([])
@@ -22,6 +22,7 @@ const Cliente = () => {
         })
     }
 
+
     useEffect(() => {
         getClientes()   
     },[])
@@ -42,7 +43,7 @@ const Cliente = () => {
                         <tr>
                             <td>{cliente.cpf}</td>
                             <td>{cliente.nome}</td>
-                            <td>Editar <Button variant="danger" onClick={() => deleteCliente(cliente.id)}>Excluir</Button>{'  '}</td>
+                            <td><FormularioCliente/><Button variant="danger" onClick={() => deleteCliente(cliente.id)}>Excluir</Button>{'  '}</td>
                         </tr>
                         )
 
@@ -50,6 +51,10 @@ const Cliente = () => {
                     
                 </tbody>
             </Table>
+            
+
+            
+
         </React.Fragment>
     )
 }
